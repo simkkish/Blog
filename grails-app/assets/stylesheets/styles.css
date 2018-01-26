@@ -1,0 +1,151 @@
+.nav a {
+    position: relative;
+    color: #ff0000;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "28 Days Later";
+}
+.jumbotron {
+    background-image: url('http://goo.gl/04j7Nn');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 100px;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Shift', sans-serif;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    color: #fff;
+}
+
+#logo{
+    width: 100%;
+    min-height: 100px;
+    height:150px;
+    border-radius: 15px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+ .panel-footer .marquee {
+    font-size: 20px;
+     position: relative;
+     height:100%;
+    width: 100%;
+    background-color:#00FF00;
+    animation-iteration-count: infinite;
+    -o-animation-fill-mode: initial;
+    animation-duration:40s;
+    animation-name: example;
+    text-align: center;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+.btn-green {
+    font-family: "28 Days Later";
+    background: #006dba;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#006dba), to(#5bc0de));
+    background: -moz-linear-gradient(#5bc0de, #006dba);
+    background: linear-gradient(#5bc0de,#5bc0de);
+    border: solid 1px #aad063;
+    border-bottom: solid 3px #799545;
+    box-shadow: inset 0 0 0 1px #e0eeb6;
+    color: #ff0000;
+    text-shadow: 0 1px 0 #d0e5a4;
+}
+.btn-green:focus,
+.btn-green.focus {
+    color: #fff;
+    background-color: #a4cb5d;
+    border-color: #799545;
+}
+.btn-green:hover {
+    font-style:unset;
+    background: #abd164;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#abd164), to(#b9d972));
+    background: -moz-linear-gradient(#abd164, #b9d972);
+    background: linear-gradient(#abd164, #b9d972);
+    border: solid 1px #98b85b;
+    border-bottom: solid 3px #799545;
+    box-shadow: inset 0 0 0 1px #cce3a1;
+}
+.btn-green:active,
+.btn-green.active,
+.open > .dropdown-toggle.btn-green {
+    color: #00FF00;
+    background-color: #a4cb5d;
+    border-color: #799545;
+}
+.btn-green:active:hover,
+.btn-green.active:hover,
+.open > .dropdown-toggle.btn-green:hover,
+.btn-green:active:focus,
+.btn-green.active:focus,
+.open > .dropdown-toggle.btn-green:focus,
+.btn-green:active.focus,
+.btn-green.active.focus,
+.open > .dropdown-toggle.btn-green.focus {
+    color: #fff;
+    background-color: #a4cb5d;
+    border-color: #799545;
+}
+.btn-green:active,
+.btn-green.active,
+.open > .dropdown-toggle.btn-green {
+    background-image: none;
+}
+.btn-green.disabled:hover,
+.btn-green[disabled]:hover,
+fieldset[disabled] .btn-green:hover,
+.btn-green.disabled:focus,
+.btn-green[disabled]:focus,
+fieldset[disabled] .btn-green:focus,
+.btn-green.disabled.focus,
+.btn-green[disabled].focus,
+fieldset[disabled] .btn-green.focus {
+    background-color: #a4cb5d;
+    border-color: #799545;
+}
+.btn-green .badge {
+    color: #a4cb5d;
+    background-color: #fff;
+}
+.dynamic-content {
+    display:block;
+}
+.nepaliText{
+font-family: Himalli;
+    font-size: 20px;
+}
+.center-align{
+   display: flex;
+    align-items: center;
+}
