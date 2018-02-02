@@ -9,10 +9,12 @@
     <asset:javascript src="jquery-2.2.0.min.js"/>
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 </head>
+
 <body>
 <div class="container">
     <!-- Trigger the modal with a button -->
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">More about team</button>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal"
+            data-target="#myModal">More about team</button>
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog">
@@ -23,6 +25,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Our team for the project</h4>
                 </div>
+
                 <div class="modal-body">
                     <p class="bg-info">I am Kishor Simkhada the founder of Frozen Mo:Mo Business.
                     I am currently doing my bachelor’s degree in business informatics at Idaho State University.
@@ -41,6 +44,7 @@
                     He has been working in the field of Marketing for last 3 years.
                     He was my classmate during tenth grade.</p>
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
