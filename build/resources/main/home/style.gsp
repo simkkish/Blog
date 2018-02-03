@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="layout" content="test"/>
-    <title>I am a test page</title>
-    <asset:stylesheet src="styles.css"/>
-    <asset:stylesheet src="bootstrap.css"/>
-    <asset:javascript src="Style.js"/>
-    <asset:javascript src="jquery-2.2.0.min.js"/>
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
+    <meta name="blogLayout" content="main"/>
+    <title>Form</title>
 </head>
-<body>
 
-<p>The quick brown fox jumps over the lazy dog.</p>
+<body>
+<g:form controller="person" action="save">
+    <label>First Name:</label>
+    <g:textField name="firstName"/><br/>
+    <label>Last Name:</label>
+    <g:textField name="lastName"/><br/>
+    <label>Age:</label>
+    <g:textField name="age"/><br/>
+    <g:actionSubmit value="Save"/>
+</g:form>
 </body>
 </html>

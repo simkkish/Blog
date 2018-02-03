@@ -88,7 +88,7 @@
 </div>
 
 <div id="section2" class="container">
-    <g:form controller="home" action="signUp()" class="formstyle1">
+    <g:form controller="contact" action="save" class="formstyle1">
         <h1 class="textstyle1">Signup Here</h1>
 
         <div class="input-group">
@@ -99,7 +99,7 @@
 
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-            <input value="" type="password" class="form-control" name="contact.password" placeholder="Password">
+            <input value="" type="password" class="form-control" name="password" placeholder="Password">
         </div>
         <br/>
 
@@ -111,7 +111,7 @@
         <br/>
 
         <div class="form-group">
-            <select id="country" class="form-control" value="country" name="contact.country"></select>
+            <select id="country" class="form-control" value="country" name="country"></select>
             <br/>
             <h5>State: <select value="state" name="state" id="state"></select></h5>
             <script language="javascript">
@@ -145,7 +145,7 @@
 
         <div class="input-group-addon">
 
-            <i class="glyphicon glyphicon-bookmark"><g:actionSubmit value="SignUp" class="textstyle2"/></i>
+            <button type="submit" class="textstyle2"><i class="glyphicon glyphicon-home"></i>SignUp</button>
         </div>
     </g:form>
 </div>

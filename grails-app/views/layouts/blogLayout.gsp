@@ -20,9 +20,9 @@
             <li><a class="btn-green" data-toggle="tooltip" data-placement="top" title="Hooray! Home" href="index">Home</a></li>
         </ul>
         <ul class="pull-right">
-            <li><a class="btn-green" data-toggle="tooltip" data-placement="top" title="Hooray! Blog Post" href="/home/blogPostPage">Blog Post Page </a></li>
+            <li><g:link controller="blog" action="index" class="btn-green">Blog Post Page</g:link></li>
             <li><a class="btn-green" data-toggle="tooltip" data-placement="top" title="Hooray! About Us" href="/home/aboutUs">About Us </a></li>
-            <li><a class="btn-green"  data-toggle="tooltip" data-placement="top" title="Hooray! Contact Us" href="/home/contactUs">Contact Us </a></li>
+            <li><g:link controller="Contact" action="index" class="btn-green">Contact Us </g:link> </li>
         </ul>
     </div>
 </div>

@@ -1,18 +1,16 @@
 package blog
 
 class Blog {
-
-    String title
-    String author
-    Date datePosted
-    Date dateModified
-    String content
-    String imgUrl
+    String title;
+    String author;
+    Date datePosted= new Date();
+    Date dateModified= new Date();
+    String content;
+    String imgUrl;
     String tag
-
     static constraints = {
-        dateModified nullable: true
-        imgUrl nullable: true
-        author nullable: true
+        tag nullable: true
+        datePosted nullable: true
+        dateModified nullable:true
     }
 }
