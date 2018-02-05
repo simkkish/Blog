@@ -7,7 +7,7 @@ class Blog {
     Date dateModified= new Date();
     String content;
     String imgUrl;
-    String tag
+    String tag;
     static constraints = {
         tag nullable: true
         datePosted nullable: true

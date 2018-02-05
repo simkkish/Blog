@@ -134,7 +134,7 @@
                 Another potential buyer is the school and hospital catering service .
                 Our On-Ground advisor and marketing agent are working on this.
                 Registering the tread mark, copyright and company registration is almost ready to go ahead.
-                However, the finance is stopping this process.</p>
+                However, the finance is stopping this process.bghbk</p>
         </p>
         </div>
     </div>

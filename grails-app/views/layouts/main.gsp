@@ -1,50 +1,172 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>
-        <g:layoutTitle default="Sample"/>
+        Home
     </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <asset:stylesheet src="bootstrap.css"/>
+    <asset:stylesheet src="Mdb.css"/>
+    <asset:javascript src="jquery-2.2.0.min.js"/>
+    <asset:javascript src="bootstrap.js"/>
+    <asset:stylesheet src="styles.css"/>
+    <asset:javascript src="country.js"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    body {
+        position: relative;
+    }
 
-    <asset:stylesheet src="application.css"/>
-    <g:layoutHead/>
+    .affix {
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+    }
+
+    .navbar {
+        margin-bottom: 0px;
+    }
+
+    .affix ~ .container-fluid {
+        position: relative;
+        top: 50px;
+    }
+
+    #section1 {
+        padding-top: 50px;
+        height: 500px;
+        color: #fff;
+        background-color: #1E88E5;
+    }
+
+    #section2 {
+        padding-top: 50px;
+        height: 500px;
+        color: #fff;
+        background-color: #673ab7;
+    }
+
+    #section3 {
+        padding-top: 50px;
+        height: 500px;
+        color: #fff;
+        background-color: #ff9800;
+    }
+
+    #section41 {
+        padding-top: 50px;
+        height: 500px;
+        color: #fff;
+        background-color: #00bcd4;
+    }
+
+    #section42 {
+        padding-top: 50px;
+        height: 500px;
+        color: #fff;
+        background-color: #009688;
+    }
+    </style>
+    <link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 </head>
 <body>
+<div class="nav">
+    <div class="container">
+        <asset:image id="logo" src="FrozenMoMoLogo.jpg" />
+        <ul class="pull-left">
+            <li><a class="btn-green" data-toggle="tooltip" data-placement="top" title="Hooray! Home" href="index">Home</a></li>
+        </ul>
+        <ul class="pull-right">
+            <li><g:link controller="blog" action="index" class="btn-green">Blog Post Page</g:link></li>
+            <li><a class="btn-green" data-toggle="tooltip" data-placement="top" title="Hooray! About Us" href="/home/aboutUs">About Us </a></li>
+            <li><g:link controller="Contact" action="index" class="btn-green">Contact Us </g:link> </li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
 
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/#">
-                    <i class="fa grails-icon">
-                        <asset:image src="grails-cupsonly-logo-white.svg"/>
-                    </i> Grails
-                </a>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <asset:image src="2279.jpg" alt="Mo:Mo"/>
             </div>
-            <div class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
-                <ul class="nav navbar-nav navbar-right">
-                    <g:pageProperty name="page.nav" />
-                </ul>
+
+            <div class="item">
+                <asset:image src="images.jpg"/>
+            </div>
+
+            <div class="item">
+                <asset:image src="Momo.jpg"/>
             </div>
         </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
+</div>
+<br/>
 
-    <g:layoutBody/>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4" id="section1">
+            <h3>Description of an Idea</h3>
 
-    <div class="footer" role="contentinfo"></div>
+            <p>This is the business that is already on the market.
+            However, we are serving the population who are not being to access the currently available market option.
+            We are implementing the idea in the new way that people have not thought as an option.</p>
+        </div>
 
-    <div id="spinner" class="spinner" style="display:none;">
-        <g:message code="spinner.alt" default="Loading&hellip;"/>
+        <div class="col-sm-4" id="section2">
+            <h3>Process to date</h3>
+
+            <p>We are contacting the customer through the use of social media.
+            We are able to know how people feel about the product.
+            The market is positive about the Product and benefit they will get form it.
+            The first thing I was doing as a founder of Frozen Mo:Mo was founding the team.
+            It was the most tedious job.
+            </p>
+
+            <p>
+                As finding good team member is like solving the half of the work.
+                We are in the phase of Going-To-Market phase.
+                We have the potential buyer of about 2000 as of Jan 21st, 2018.
+                We are using the direct labor method that will reduce the cost further.
+                We already contacted the telecommunication company to install toll-free number.
+                Our Team member living in Nepal already contacted the farmer.
+                Also signed the contract with the farmer to buy the product.
+                We lso contact the Airlines Company if they want to serve the product.
+                Another potential buyer is the school and hospital catering service .
+                Our On-Ground advisor and marketing agent are working on this.
+                Registering the tread mark, copyright and company registration is almost ready to go ahead.
+                However, the finance is stopping this process.bghbk</p>
+        </p>
+        </div>
     </div>
-
-    <asset:javascript src="application.js"/>
-
+</div>
+<br/>
+<div id="footer">
+    <div class="panel-footer">
+        <div class="marquee">
+            <p class="glyphicon glyphicon-copyright-mark"></p>
+            Kishor Simkhada <nepaliText>ls;f]® l;Dv+8f</nepaliText>
+            <p/>
+        </div>
+    </div>
+</div>
 </body>
 </html>
